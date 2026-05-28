@@ -14,13 +14,9 @@ const goBack = () => {
   router.push({ name: 'home', query: route.query })
 }
   const placeholder = '/images/placeholder.svg'
-  function onImgError(e){
-    const t = e.target
-    if(t && t.src && !t.dataset?.fallback){
-      t.dataset = t.dataset || {}
-      t.dataset.fallback = '1'
-      t.src = placeholder
-    }
+  function onImgError(){
+    if (!product.value || product.value.id == null) return
+    product.value.image_link = placeholder
   }
 </script>
 
