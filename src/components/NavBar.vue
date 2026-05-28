@@ -53,4 +53,11 @@ const props = defineProps<{ currentPage: number; totalPages: number }>()
     border: 1px solid rgba(230, 73, 140, 0.14);
     border-radius: 24px;
 }
+.summary {
+    color: var(--primary-2);
+    font-weight: 700;
+    background: rgba(230, 109, 73, 0.12);
+    border-radius: 999px;
+    padding: 10px 16px;
+}
 </style>
