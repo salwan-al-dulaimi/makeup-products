@@ -77,13 +77,7 @@ const hideProduct = (id: number | string) => {
     padding: 26px 20px 40px;
 }
 
-.summary {
-    color: var(--primary-2);
-    font-weight: 700;
-    background: rgba(230, 109, 73, 0.12);
-    border-radius: 999px;
-    padding: 10px 16px;
-}
+
 
 .product-grid {
     display: grid;
