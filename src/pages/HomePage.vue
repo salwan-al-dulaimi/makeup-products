@@ -52,8 +52,8 @@ const hideProduct = (id: number | string) => {
 <template>
   <section class="home-page">
     <div class="page-heading">
-      <div>
-        <h1>Makeup Products</h1>
+      <div class="page-title">
+        <img src="/Makeup%20Productslogo.png" alt="Makeup Products logo" class="page-logo" />
         <p>Browse all products, 10 items per page, with simple page navigation.</p>
       </div>
       <div class="summary">Page {{ currentPage }} of {{ totalPages }}</div>
@@ -99,6 +99,15 @@ const hideProduct = (id: number | string) => {
   margin: 0;
   font-size: clamp(2rem, 2.4vw, 2.4rem);
   color: var(--primary-4);
+}
+.page-title {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.page-logo {
+  max-width: 260px;
+  height: auto;
 }
 .page-heading p {
   margin: 10px 0 0;
