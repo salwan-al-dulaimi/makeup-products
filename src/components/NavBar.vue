@@ -28,7 +28,8 @@ const toggleMenu = () => {
     <div class="navbar-container">
       <!-- Logo -->
       <div class="navbar-logo">
-        <a href="#">BrandLogo</a>
+        <img src="/Makeup%20Productslogo.png" alt="Makeup Products logo" class="page-logo" />
+
       </div>
 
       <!-- Hamburger Menu Button -->
