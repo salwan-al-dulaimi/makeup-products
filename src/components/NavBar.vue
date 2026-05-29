@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const props = defineProps<{ currentPage: number; totalPages: number }>()
 </script>
 
 <template>
@@ -11,7 +10,6 @@ const props = defineProps<{ currentPage: number; totalPages: number }>()
                 </router-link>
             </div>
             <p>Browse all products, 10 items per page, with simple page navigation.</p>
-            <div class="summary">Page {{ props.currentPage }} of {{ props.totalPages }}</div>
         </div>
     </nav>
 </template>

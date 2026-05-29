@@ -52,7 +52,8 @@ const hideProduct = (id: number | string) => {
 
 <template>
     <section class="home-page">
-        <NavBar :current-page="currentPage" :total-pages="totalPages" />
+        <NavBar />
+        <div class="summary">Page {{ currentPage }} of {{ totalPages }}</div>
 
         <div class="product-grid">
             <ProductCard v-for="product in paginatedProducts" :key="product.id" :product="product"
@@ -76,8 +77,6 @@ const hideProduct = (id: number | string) => {
     margin: 0 auto;
     padding: 26px 20px 40px;
 }
-
-
 
 .product-grid {
     display: grid;
