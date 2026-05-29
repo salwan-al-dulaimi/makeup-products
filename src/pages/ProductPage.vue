@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import type { Product } from '../types/product'
 import products from '../../products.json'
+import NavBar from '@/components/NavBar.vue'
 
 const allProducts = products as Product[]
 const route = useRoute()
@@ -22,6 +23,8 @@ const goBack = () => {
 
 <template>
   <section class="product-page">
+    <NavBar />
+
     <button class="back-button" @click="goBack">← Back to list</button>
 
     <div v-if="product" class="product-panel">
